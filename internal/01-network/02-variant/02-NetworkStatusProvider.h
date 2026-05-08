@@ -14,7 +14,7 @@ class NetworkStatusProvider : public INetworkStatusProvider {
     Private INetworkStatusStorePtr store;
 
     Public Bool IsNetworkConnected() const override {
-        return store->IsNetworkConnected();
+        return true; //store->IsNetworkConnected();
     }
 
     Public ULong GetNetworkConnectionId() const override {
